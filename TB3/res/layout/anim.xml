@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+        <TextView style="?android:textAppearanceMedium"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello There! This is RJ"
+            android:padding="16dp" 
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ObjectAnimator"
+            android:background="@drawable/plantape"
+           	android:layout_marginBottom="10dp"/>
+        
+         <TextView
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ViewPropertyAnimator"
+            android:background="@drawable/plantape"
+            android:layout_marginBottom="10dp"/>
+         
+           <TextView
+            android:id="@+id/a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title3"
+            android:background="@drawable/plantape"
+            android:layout_marginBottom="10dp"/>
+           
+           <TextView
+            android:id="@+id/a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title4"
+            android:background="@drawable/plantape"
+            android:layout_marginBottom="10dp"/>
+             
+           <TextView
+            android:id="@+id/a5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title5"
+            android:background="@drawable/plantape"
+            android:layout_marginBottom="10dp"/>
+        
+</LinearLayout>

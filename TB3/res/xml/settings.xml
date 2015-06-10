@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<EditTextPreference
+	    android:title="@string/et"
+	    android:key="Setting 1"
+	    android:defaultValue="Setting 1" />
+	
+	<CheckBoxPreference
+	    android:title="@string/play"
+	    android:key="Setting 2"
+	    android:defaultValue="true" />
+	
+	<ListPreference
+	    android:title="@string/list"
+	    android:key="Setting 3"
+	    android:entries="@array/listArray"
+	    android:entryValues="@array/listArrayVal" />
+	
+	<PreferenceCategory android:title="@string/cate">
+	   
+	    <EditTextPreference
+	    	android:title="@string/et"
+	    	android:key="Setting 4"
+	    	android:defaultValue="Setting 4" />
+	
+		<CheckBoxPreference
+	    	android:title="@string/cb"
+	    	android:key="Setting 5"
+	    	android:defaultValue="true" />
+	    
+	</PreferenceCategory>
+	
+	<PreferenceScreen 
+	    android:title="@string/cate">
+	    
+	    <EditTextPreference
+	    	android:title="@string/et"
+	    	android:key="Setting 6"
+	    	android:defaultValue="Setting 6" />
+	
+		<CheckBoxPreference
+	    	android:title="@string/cb"
+	    	android:key="Setting 7"
+	    	android:defaultValue="true" />
+	    
+	</PreferenceScreen>
+    
+</PreferenceScreen>

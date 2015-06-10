@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name is..." />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/better"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Better" />
+
+        <RadioButton
+            android:id="@+id/best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="he" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Answer" />
+
+</LinearLayout>

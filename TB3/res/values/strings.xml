@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TB3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello"> Hello </string>
+    <string name="NOC"> You have clicked me 0 times </string>
+    <string name="title_activity_tb3act2">TB3act2</string>
+    <string name="startApp"> Starting an unusual APP&#8230;</string>
+    <string name="BNext"> Next </string>
+    <string name="password"> Enter password </string>
+	<string name="submit"> Submit </string>
+	<string name="toggle"> Toggle </string>
+	<string name="invalid"> Invalid </string>
+	<string name="name"> Name </string>
+	<string name="scale"> Scale </string>
+	<string name="nameb">Name</string>
+	<string name="scaleb"> Scale </string>
+	<string name="update"> SQLite Update Database </string>
+	<string name="view"> View </string>
+	<string name="get"> get info from id </string>
+	<string name="et"> Setting 1 </string>
+	<string name="cb"> Setting 2 </string>
+	<string name="list"> Setting 3 </string>
+	<string name="cate"> Title is here </string>
+	<string name="settings"> Settings </string>
+	<string name="play"> Play Music </string>
+	<string name="notif"> Icon </string>
+	
+	<string-array name="listArray">
+	    <item> Item 1 </item>
+	    <item> Item 2 </item>
+	    <item> Item 3 </item>
+	    <item> Item 4 </item>
+	    <item> Item 5 </item>
+	</string-array>
+	
+    <string-array name="listArrayVal">
+        <item> Value 1 </item>
+	    <item> Value 2 </item>
+	    <item> Value 3 </item>
+	    <item> Value 4 </item>
+	    <item> Value 5 </item>
+    </string-array>
+	
+</resources>

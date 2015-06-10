@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="25dp">
+    
+    <EditText
+        android:id="@+id/pass"
+      	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:inputType="textPassword"
+    	android:hint="@string/password" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+	    <Button 
+	        android:id="@+id/sub"
+	        android:layout_weight="20"
+	      	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:text="@string/submit"/>
+	    <ToggleButton
+	        android:id="@+id/tog"
+	        android:layout_weight="80"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:text="@string/toggle"
+	    	android:checked="true"
+	    	android:paddingBottom="1dp" />
+	 </LinearLayout>
+	 
+    <TextView
+        android:id="@+id/invalid"
+      	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/invalid"
+    	android:gravity="center" />
+    
+</LinearLayout>
