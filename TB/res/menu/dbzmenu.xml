@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+	<item
+	    android:id="@+id/item1"
+	    android:icon="@drawable/android"
+	    android:title="@string/item1"/>
+	
+	<item
+	    android:id="@+id/item2"
+	    android:icon="@drawable/item2"
+	    android:title="@string/item2"
+	    app:showAsAction="always|withText|collapseActionView"
+	    app:actionProviderClass="com.example.tb.MyActionProvider"/>
+	    
+	<item
+	    android:id="@+id/item3"
+	    android:icon="@drawable/item7"
+	    android:title="@string/item3"
+	    android:alphabeticShortcut="S"
+        android:numericShortcut="1"
+        android:checkable="true"
+        android:checked="true"
+        android:visible="true"
+        android:enabled="true"
+	    app:showAsAction="never" />
+	    
+	<item
+	    android:id="@+id/item4"
+	    android:icon="@drawable/item7"
+	    android:title="@string/item4"
+	    app:showAsAction="ifRoom|collapseActionView"
+	    app:actionViewClass="com.example.tb.AV"/>
+	
+	<item
+	    android:id="@+id/item5"
+	    android:icon="@drawable/item5"
+	    android:title="@string/item5">
+	    <menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    
+		    <item
+	   			android:id="@+id/item7"
+			    android:icon="@drawable/item7"
+			    android:title="@string/item3" />
+	
+			<item
+			    android:id="@+id/item8"
+			    android:icon="@drawable/item7"
+			    android:title="@string/item4" />
+			
+		</menu>
+		
+	</item>
+		    
+	<item
+	    android:id="@+id/item6"
+	    android:icon="@drawable/item6"
+	    android:title="@string/item6" />
+    
+</menu>
