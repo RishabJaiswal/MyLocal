@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hub.com.statushub.People"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/people">
+
+    <ProgressBar
+        android:id="@+id/dataFetchPb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_alignTop="@+id/rcView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/sortTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by:"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/sortTextTv">
+
+            <RadioButton
+                android:id="@+id/htRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_marginRight="32dp"/>
+
+            <RadioButton
+                android:id="@+id/wtRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcView"
+        android:layout_below="@+id/ll"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</RelativeLayout>
