@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currLocFab"
+            app:fabSize="mini"
+            app:elevation="5dp"
+            app:pressedTranslationZ="6dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/currloc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e000"
+            android:textSize="14sp"
+            android:text="Current location of car"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:apiKey="AIzaSyB6pQBhp56QJcXVJBLl_Au70ZXxu-mAia4"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

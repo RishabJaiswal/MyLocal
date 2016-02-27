@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="3dp">
+
+        <ImageView
+            android:id="@+id/carImg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/logo"
+            android:scaleType="centerInside"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/grad"
+            android:padding="8dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/carName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subHeadTextSize"
+                android:textColor="#fff"
+                android:text="CarName"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/hourlyRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/bodyTextSize"
+                android:text="X per hour"
+                android:textColor="#fff"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/carName"/>
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/carRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

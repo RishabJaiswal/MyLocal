@@ -1,0 +1,120 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/carsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior=
+            "@string/appbar_scrolling_view_behavior"
+        android:background="#eee"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/apihits"
+                android:text="Api hits :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/appBarOtherText"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+            <TextView
+                android:id="@+id/totalCars"
+                android:text="Total cars :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/appBarOtherText"
+                android:textColor="#fff"
+                android:layout_marginRight="8dp"
+                android:gravity="end"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:title="Zoom Car"
+                android:titleTextColor="#FFF"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by: "
+                android:textColor="#fff"
+                android:textSize="@dimen/appBarOtherText"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:textColor="#fff"
+                    android:id="@+id/hourlyRateRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rates"
+                    android:textSize="@dimen/appBarOtherText"
+                    android:layout_marginRight="16dp"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/carRatingRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/appBarOtherText"
+                    android:text="Rating"
+                    android:textColor="#fff"
+                    android:checked="false"
+                    android:layout_marginRight="16dp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
