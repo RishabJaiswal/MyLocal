@@ -1,2 +1,2 @@
 # MyLocal
-All my local projects and simple implementations
+Some of my local projects and simple implementations
